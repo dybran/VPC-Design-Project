@@ -251,6 +251,8 @@ We can access the crispy web01 server from the load balancer using the DNS name
 
 This setup increases the security of the instances in the private subnet.
 
+We can create an Auto Scaling Group for the EC2 instances in the private subnets. 
+
 
 
 
