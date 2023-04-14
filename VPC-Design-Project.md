@@ -64,9 +64,6 @@ VPC Range - __172.21.0.0/16__
 - 4 route tables
 - 1 Bastion host/Jump server in the public subnet so we can access instances in the private subnet.
 
-We will also make use of __NACL - Network Access Control__ List for the subnets. The [difference](https://digitalcloud.training/aws-security-group-vs-nacl-key-differences/) between __Security Groups__ and __NACL__.
-- We will create an extra VPC for [VPC Peering](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html).
-
 In every region we have a default VPC, atleast two subnets(one subnet in each zone), Internet gateway and Route table.
 We can crteate VPC through the dashboard but we will be creating our VPC manually to manage our infrastructure better.
 
@@ -247,13 +244,13 @@ Crispy web01 security group should allow connection from the load balancer
 
 ![image](./images/sqc.PNG)
 
-We can access the crispy web01server from the load balancer using the DNS name
+We can access the crispy web01 server from the load balancer using the DNS name
 
 ![image](./images/wer.PNG)
 
 ![image](./images/1.PNG)
 
-
+This setup increases the security of the instances in the private subnet.
 
 
 
