@@ -1,2 +1,2 @@
-# Manual VPC-Design-Project
+# VPC-Design-Project
 
